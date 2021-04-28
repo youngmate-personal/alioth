@@ -14,7 +14,7 @@ import java.io.IOException;
  * @date 2021/4/16 0016
  */
 @Slf4j
-@WebServlet(name = "myServlet", urlPatterns = "/hello")
+@WebServlet(name = "myServlet", urlPatterns = "/mate")
 public class MyServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

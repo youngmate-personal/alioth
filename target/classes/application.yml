@@ -3,3 +3,14 @@ spring:
   profiles:
     active: prod
 
+#自定义person对象
+person:
+  name: 可心
+  age: 1
+  sex: 女
+  hobby:
+    - eating
+    - crying
+    - playing
+    - sleeping
+
