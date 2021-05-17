@@ -21,7 +21,16 @@ public class Person {
     private Integer age;
     /** 性别 */
     private String sex;
+
     /** 爱好 */
     private List<String> hobby;
 
+    public Person() {
+    }
+
+    public Person(String name, Integer age, String sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+    }
 }

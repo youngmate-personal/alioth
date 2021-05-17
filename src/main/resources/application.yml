@@ -2,6 +2,8 @@
 spring:
   profiles:
     active: prod
+  messages:
+    basename: i18n/login
 
 #自定义person对象
 person:
@@ -13,4 +15,6 @@ person:
     - crying
     - playing
     - sleeping
+
+
 
