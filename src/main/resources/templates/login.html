@@ -6,22 +6,31 @@
 </head>
 <body>
 <form action="" method="post">
-
-    <label >Username</label>
-    <input type="text"  name="username"  placeholder="Username" >
-    <label >Password</label>
-    <input type="password" name="password" placeholder="Password" >
-    <br> <br>
+    <label th:text="#{login.username}">Username</label>
+    <input type="text" name="username" placeholder="Username" th:placeholder="#{login.username}">
+    <label th:text="#{login.password}">Password</label>
+    <input type="password" name="password" placeholder="Password" th:placeholder="#{login.password}">
+    <br>
+    <br>
     <div>
         <label>
-            <input type="checkbox" value="remember-me"/> Remember Me
+            <input type="checkbox" value="remember-me"/>
+            [[#{login.remember}]]
         </label>
     </div>
     <br>
-    <button  type="submit">Sign in</button>
-    <br> <br>
-    <a>中文</a>
-    <a>English</a>
+    <button type="submit" th:text="#{login.sign}">Sign in</button>
+    <br>
+    <br>
+    <a th:href="@{/login.html(language='zh_CN')}">中文</a>
+    <a th:href="@{/login.html(language='en_US')}">English</a>
 </form>
+
+<!--三种不同的引入方式-->
+<div th:insert="footer::copy"></div>
+<div th:replace="footer::copy"></div>
+<div th:include="footer::copy"></div>
+
 </body>
 </html>
+

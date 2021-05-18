@@ -51,4 +51,9 @@ public class ThymeleafController {
         return "standardExpression";
     }
 
+    @RequestMapping("/login")
+    public String login() {
+        return "login";
+    }
+
 }
